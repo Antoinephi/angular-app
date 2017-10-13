@@ -38,9 +38,11 @@ jobs:
       - run: cp .htaccess dist/.htaccess
       - run: cd dist
       - run: git init
+      - run: git config --global user.email "<>"
+      - run: git config --global user.name "Antoine"
       - run: git remote add clever git+ssh://git@push-par-clevercloud-customers.services.clever-cloud.com/app_dd0692e0-c783-446b-8df9-5e48a61238d8.git
       - run: git add --all 
-      - run: git commit --author="Antoine <>" -m "commit message"
+      - run: git commit -m "commit message --author Antoine <>"
       - run: git push clever master 
 
 
