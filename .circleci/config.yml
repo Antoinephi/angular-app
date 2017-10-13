@@ -34,17 +34,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # build!
-      - run: yarn build
-      - run: cp .htaccess dist/.htaccess
-      - run: cd dist && git init
-      - run: git config --global user.email "<>"
-      - run: git config --global user.name "Antoine"
-      - run: git remote add clever git+ssh://git@push-par-clevercloud-customers.services.clever-cloud.com/app_dd0692e0-c783-446b-8df9-5e48a61238d8.git
-      - run: git add dist/ 
-      - run: git commit -m "commit message --author Antoine <>"
-      - run: ssh-keyscan -H 212.129.46.93 >> ~/.ssh/known_hosts
-      - run: ssh-keyscan -H push-par-clevercloud-customers.services.clever-cloud.com >> ~/.ssh/known_hosts
-      - run: git push -f clever master
+      - run: sh scripts/deploy.sh
 
 
 
