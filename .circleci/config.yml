@@ -39,7 +39,7 @@ jobs:
       - run: cd dist
       - run: git init 
       - run: git remote add clever git+ssh://git@push-par-clevercloud-customers.services.clever-cloud.com/app_dd0692e0-c783-446b-8df9-5e48a61238d8.git 
-      - run: git commit -m \"{{ checksum "dist/" }}\"
+      - run: git commit -m \"commit message\"
       - run: git push clever master 
 
 
