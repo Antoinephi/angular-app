@@ -45,7 +45,7 @@ jobs:
       - run: git commit -m "commit message --author Antoine <>"
       - run: ssh-keyscan -H 212.129.46.93 >> ~/.ssh/known_hosts
       - run: ssh-keyscan -H push-par-clevercloud-customers.services.clever-cloud.com >> ~/.ssh/known_hosts
-      - run: git push clever master 
+      - run: git push -f clever master 
 
 
 
