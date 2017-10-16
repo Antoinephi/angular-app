@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TippersComponent {
 
-  private tippers;
+  public tippers;
 
   constructor(private http: HttpClient) {
     this.tippers = this.http.get('http://tip-spirit-api.cleverapps.io/tippers');

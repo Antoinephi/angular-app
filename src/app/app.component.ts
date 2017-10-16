@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class AppComponent {
   title = 'Tip-spirit !!!';
 
-  constructor(private route: ActivatedRoute) {
+  constructor(public route: ActivatedRoute) {
   }
 
 }
