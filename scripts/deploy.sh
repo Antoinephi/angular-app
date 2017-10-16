@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cp ../.htaccess ../dist/.htaccess &&
-cd ../dist &&
+cp .htaccess dist/.htaccess &&
+cd dist &&
 git init &&
 git config --global user.email "<>" &&
 git config --global user.name "Antoine" &&
