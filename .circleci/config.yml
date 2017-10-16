@@ -35,6 +35,6 @@ jobs:
         
       # build!
       - run: yarn build
-      - run: sh scripts/deploy.sh
+      - run: bash scripts/deploy.sh
 
 
