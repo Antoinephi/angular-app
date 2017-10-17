@@ -16,11 +16,11 @@ function init () {
 
 function setup_git () {
   git init
+  ssh-keyscan -H $CC_HOST_IP >> ~/.ssh/known_hosts
+  ssh-keyscan -H $CC_HOST_NAME >> ~/.ssh/known_hosts
   git remote add clever $CC_GIT_ADDRESS
   git fetch --prune clever
   git reset clever/master
-  ssh-keyscan -H $CC_HOST_IP >> ~/.ssh/known_hosts
-  ssh-keyscan -H $CC_HOST_NAME >> ~/.ssh/known_hosts
 }
 
 function publish () {
