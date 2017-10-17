@@ -3,7 +3,7 @@
 USER="CIRCLE_BOT <>"
 
 CC_GIT_ADDRESS="git+ssh://git@push-par-clevercloud-customers.services.clever-cloud.com/app_dd0692e0-c783-446b-8df9-5e48a61238d8.git"
-CC_HOST_IP="212.129.46.93"
+CC_HOST_IP=212.129.46.93
 CC_HOST_NAME="push-par-clevercloud-customers.services.clever-cloud.com"
 
 INITIAL_COMMIT_HASH=`git log -n1 --format="%h"`
